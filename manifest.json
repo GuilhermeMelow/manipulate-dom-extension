@@ -1,0 +1,25 @@
+{
+    "name": "Dom manipulate extension",
+    "version": "1.0.0",
+    "description": "Teste manipulação dom por meio de uma extensão",
+    "manifest_version": 3,
+    "author": "Guilherme Melo",
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "scripts/content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Dom manipulate"
+    }
+}
